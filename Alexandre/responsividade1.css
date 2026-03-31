@@ -1,0 +1,14 @@
+ nav ul {
+ gap: 15px;
+ font-size: 0.9rem;
+} 
+
+.logo {
+ font-size: 1rem;
+} 
+
+.btn-topo {
+ bottom: 15px;
+ right: 15px;
+ font-size: 1.2rem;
+}

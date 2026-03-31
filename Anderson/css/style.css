@@ -1,0 +1,286 @@
+    :root{
+      --azul: #5b919d;
+      --azul_escuro: #3c6d7f;
+      --vermelho: #d45023;
+      --vermelho_escuro: #d93b0c;
+      --cinza: #6B7280;
+      --bg: #e8e8e8;
+      --branco: #FFFFFF;
+      --max-width: 1100px;
+      font-family: "Space Mono", monospace;
+    }
+    *{
+      box-sizing:border-box
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#0f172a;
+      line-height:1.5
+    }
+    section{
+      width: 90%;
+    }
+
+    .hero{
+      position:relative;
+      height:60vh;
+      min-height:420px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      background-image: url('../images/bg2.png');
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed; /* parallax on desktop */
+
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      max-width:var(--max-width);
+      width:100%;
+    }
+    .hero-inner nav ul{
+      width: 100%;
+      margin: 0 auto;
+      padding-inline-start: 0px;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+    .hero-inner nav ul li{
+      padding: 0 5%;
+    }
+    .hero-inner nav ul li a{
+      text-decoration: none;
+    }
+    .avatar{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      overflow:hidden;
+      margin:0 auto;
+      border:6px solid rgba(255,255,255,0.9);
+      box-shadow:0 10px 30px rgba(2,6,23,0.45);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+    }
+
+    .title{
+      margin-top:30px;
+    }
+    .title h1{
+      margin:0;
+      font-size:24px;
+      letter-spacing:0.2px;
+      color:var(--azul_escuro);
+    }
+    .title p{
+      margin:5px 0 0;
+      color: var(--azul);
+      font-size:14px}
+
+    .main{
+      margin:40px auto ;
+      max-width:var(--max-width);
+      background:var(--branco);
+      border-radius:14px;
+      padding:2rem;
+      box-shadow:0 8px 30px rgba(2,6,23,0.08);
+    }
+    .about{
+      display:flex;
+      gap:30px;
+      align-items:center
+    }
+    .about .bio{
+      flex:2;
+    }
+    .about .cta{
+      flex:1;
+    }
+    .about p{
+      margin:0 0 1rem;
+      color:var(--cinza)
+    }
+    .about p span{
+      color: var(--vermelho);
+    }
+    .about p span:hover{
+      color: var(--branco);
+      background: var(--vermelho)
+    }
+    .infos{
+      font-size:14px;
+      color: var(--cinza);
+      margin: 0 10px 0 0;
+    }
+    .infos i{
+      font-size: 20px;
+      color: var(--azul_escuro);
+    }
+  /* HTML: <div class="loader"></div> */
+    .loader {
+      width: fit-content;
+      font-weight: bold;
+      font-size: 30px;
+      color:#0000;
+      background: linear-gradient(90deg, var(--azul) 25%, var(--vermelho) 0 50%, var(--azul_escuro) 0 75%,var(--vermelho_escuro) 0) 0 0/400% 100%;
+      -webkit-background-clip:text;
+              background-clip:text;
+      animation:l10 5s infinite cubic-bezier(0.3,1,0,1);
+    }
+    .loader:before {
+      content:"..";
+       letter-spacing: -5px;
+    }
+    @keyframes l10 {
+      25% {background-position: calc(1*100%/3) 0}
+      50% {background-position: calc(2*100%/3) 0}
+      75% {background-position: calc(3*100%/3) 0}
+      100%{background-position: calc(4*100%/3) 0}
+    }
+
+   .input{
+      width: 100%;
+      height: 40px;
+      background: var(--branco);
+      border: 1px solid var(--bg);
+      border-radius: 8px;
+      margin: 10px 0 20px;
+      transition: all 0.3s linear;
+      padding: 5px 15px;
+
+   }
+   .input::placeholder{
+      font-size:16px;
+      color:var(--cinza);
+      font-family: "Space Mono", monospace;
+      opacity: .5;
+   }
+   .input:focus{
+      outline: none;
+      border: 1px solid var(--vermelho);
+      box-shadow:0 8px 10px rgba(2,6,23,0.1);
+      transition: all 0.3s linear;
+   }
+  .btn{
+      height: 40px;
+      padding:10px 15px;
+      border-radius:8px;
+      background:var(--azul);
+      border: 1px solid var(--azul_escuro);
+      font-family: "Space Mono", monospace;
+      color: var(--branco);
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+  }
+  .btn:hover{
+      box-shadow:0 8px 10px rgba(2,6,23,0.1);
+      background:var(--vermelho);
+      border: 1px solid var(--vermelho_escuro);
+      transition: all 0.3s linear;
+  }
+
+  /* GALLERY */
+  .gallery-wrap{
+    max-width:var(--max-width);
+    margin:50px auto 100px;
+  }
+  .gallery-wrap h2{
+    text-align:center;
+    margin-bottom:30px;
+  }
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+  }
+  .card{
+    background:var(--branco);
+    border-radius:10px;
+    overflow:hidden;
+    display:block;
+    position:relative;
+    box-shadow:0 8px 20px rgba(2,6,23,0.06);
+    transform:translateY(0);
+    transition:transform .35s ease, box-shadow .35s ease;
+    text-decoration: none;
+
+  }
+  .card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+    transition:transform .45s ease
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(2,6,23,0.12);
+  }
+  .card:hover img{
+    transform:scale(1.06)
+  }
+  .card .meta{
+    padding:15px 10px;
+  }
+  .card .meta h3{
+    margin:0;
+    font-size:16px;
+    color: var(--azul);
+  }
+  .card .meta p{
+    margin:1px 0 0;
+    color:var(--vermelho);
+    font-size:14px;
+  }
+  .footer{
+    text-align:center;
+    padding:30px 15px;
+    color:var(--cinza)
+  }
+
+  /* RESPONSIVE */
+  @media (max-width:820px){
+    .hero{
+      height:48vh;
+      min-height:360px;
+      background-attachment:scroll;
+    }
+    .about{
+      flex-direction:column
+    }
+    .about .cta{
+      width:100%
+    }
+    .avatar{
+      width:140px;
+      height:140px
+    }
+  }
+  @media (max-width:420px){
+    .avatar{
+      width:120px;
+      height:120px}
+    .title h1{
+      font-size:18px;
+    }
+  }
+  .muted{
+    color:var(--cinza)
+  }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding - Desenvolvimento Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav_footer.css" />
+    <link
+      rel="stylesheet"
+      href="css/responsivo.css"
+      media="(max-width: 820px)"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo"><img src="img/logo.png" alt="logo" /></div>
+        <div>
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav>
+            <ul class="menu">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Servicos">Serviços</a></li>
+              <li><a href="#Socios">Sócios</a></li>
+              <li><a href="#Contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero container" id="Home">
+      <div>
+        <img src="img/dev-studio.jpg" alt="Dev Studio" class="hero-img" />
+      </div>
+      <div class="hero-text">
+        <h1>Sites modernos para negócios inteligentes.</h1>
+        <p>Projetos únicos criados por especialistas em desenvolvimento web.</p>
+        <a class="btn" href="#Contato">Começar Projeto</a>
+      </div>
+    </section>
+
+    <section class="servicos" id="Servicos">
+      <h2>Serviços</h2>
+      <div class="container">
+        <div class="grid">
+          <div class="card">
+            <img src="img/desenvolvimento-web.jpeg" alt="Desenvolvimento Web" />
+            <p>Desenvolvimento Web</p>
+          </div>
+          <div class="card">
+            <img src="img/sites-responsivos.png" alt="Sites responsivos" />
+            <p>Sites Responsivos</p>
+          </div>
+          <div class="card">
+            <img src="img/identidade-visual.png" alt="Identidade visual" />
+            <p>Identidade Visual</p>
+          </div>
+          <div class="card">
+            <img src="img/e-commerce.jpg" alt="E-commerce" />
+            <p>E-commerce</p>
+          </div>
+          <div class="card">
+            <img src="img/manutencao.webp" alt="Manutenção" />
+            <p>Manutenção</p>
+          </div>
+          <div class="card">
+            <img src="img/seo-e-performance.webp" alt="Seo & performance" />
+            <p>SEO & Performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="socios" id="Socios">
+      <h2>Sócios</h2>
+      <div class="socios-grid">
+        <div class="pessoa">
+          <div class="img">
+            <img
+              src="./Alexandre/imagens/alexandre.png"
+              alt="Alexandre Araújo"
+            />
+          </div>
+          <h3>Alexandre Araújo</h3>
+          <p>Dev Front-End</p>
+          <a
+            class="btn_socios small"
+            target="_blank"
+            href="https://wa.me/5585986078607"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a class="btn_socios small" href="#"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a class="btn_socios small" href="./Alexandre/index.html">Portfólio</a>
+        </div>
+        <div class="pessoa">
+          <div class="img">
+            <img src="./Iolanda/img/iolanda.jpeg" alt="Iolanda Barreto" />
+          </div>
+          <h3>Iolanda Barreto</h3>
+          <p>Dev Front-End</p>
+          <a
+            class="btn_socios small"
+            target="_blank"
+            href="https://wa.me/557599992220"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            class="btn_socios small"
+            target="_blank"
+            href="https://www.linkedin.com/in/iolanda-barreto/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a class="btn_socios small" href="./Iolanda/index.html">Portfólio</a>
+        </div>
+        <div class="pessoa">
+          <div class="img">
+            <img src="./Anderson/images/anderson2.png" alt="Anderson Silva" />
+          </div>
+          <h3>Anderson Silva</h3>
+          <p>Dev Front-End</p>
+          <a
+            class="btn_socios small"
+            target="_blank"
+            href="https://wa.me/5579998346305"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            class="btn_socios small"
+            target="_blank"
+            href="https://www.linkedin.com/in/andersonsilva08/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a class="btn_socios small" href="./Anderson/index.html">Portfólio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero container" id="Contato">
+      <div>
+        <h1>Venha conhecer toda nossa equipe de desenvolvedor!</h1>
+        <iframe
+          class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.2164623522!2d-47.88610979746258!3d-15.803005621239029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ba593a8a7ad%3A0x6e3084ba02e825c3!2sCaixa%20Econ%C3%B4mica%20Federal!5e0!3m2!1spt-BR!2sbr!4v1764078912976!5m2!1spt-BR!2sbr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe
+        ><br /><br />
+      </div>
+      <div class="box_contato">
+        <h1>Ou se preferir entre em contato conosco!</h1>
+        <form action="/">
+          <label class="label" for="Nome">Nome:</label><br />
+          <input
+            class="input"
+            type="text"
+            name="Nome"
+            id="Nome"
+            placeholder="Digite seu nome"
+          /><br />
+          <label class="label" for="Email">E-mail:</label><br />
+          <input
+            class="input"
+            type="email"
+            name="Email"
+            id="Email"
+            placeholder="Digite seu e-mail"
+          /><br />
+          <label class="label" for="Mensagem">Mensagem:</label><br />
+          <textarea
+            class="textarea"
+            name="Mensagem"
+            id="Mensagem"
+            placeholder="Digite sua mensagem"
+          ></textarea
+          ><br />
+          <button type="submit" class="btn_form">Enviar!</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Coding — Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

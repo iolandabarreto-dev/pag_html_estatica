@@ -1,0 +1,288 @@
+/* ------------------- */
+/* RESET E CONFIG       */
+/* ------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+  line-height: 1.8;
+}
+
+body {
+  background-image: url("../img/Petrolina-PE-Wikimedia-Commons.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #1a8fe3;
+}
+
+/* ------------------- */
+/* NAVBAR FIXA         */
+/* ------------------- */
+
+#navbar {
+  padding: 1.5rem 2.5rem;
+  border-bottom: 5px solid #ddd;
+  background-color: #37a1f7;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ------------------- */
+/* CONTEÚDO PRINCIPAL   */
+/* ------------------- */
+
+.container {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 2.5rem;
+  max-width: 1200px;
+  margin: 7rem auto 0 auto;
+}
+
+/* ------------------- */
+/* POSTS EM GRID        */
+/* ------------------- */
+
+#posts-container {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
+}
+
+.post {
+  background: #fff;
+  border: 5px solid #eee;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* ------------------- */
+/* POST EM DESTAQUE     */
+/* ------------------- */
+
+.featured {
+  grid-column: 1 / -1;
+  border-color: #1a8fe3;
+}
+
+.featured img {
+  height: 380px;
+  object-fit: cover;
+}
+
+.featured .title {
+  font-size: 2rem;
+}
+
+/* ------------------- */
+/* SIDEBAR              */
+/* ------------------- */
+
+#sidebar {
+  flex: 1;
+  max-width: 300px;
+}
+
+#search-bar,
+#categories,
+#tags {
+  padding: 1.5rem;
+  border: 5px solid #ddd;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#search-bar form {
+  display: flex;
+}
+
+#search-bar input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+}
+
+#search-bar input[type="submit"] {
+  cursor: pointer;
+  background-color: #37a1f7;
+  color: #fff;
+  border: none;
+}
+
+#categories li {
+  margin-bottom: 1rem;
+}
+
+#tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#tags-container a {
+  background-color: #ddd;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.7rem;
+}
+
+/* ------------------- */
+/* RESPONSIVO           */
+/* ------------------- */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    max-width: 100%;
+  }
+}
+
+/* ------------------- */
+/* HEADER               */
+/* ------------------- */
+
+:root {
+  --primary: #1abc9c;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --text: #34495e;
+}
+
+.header-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--dark);
+  transition: 0.3s;
+}
+
+/* OCULTAR CHECKBOX */
+#menu-checkbox {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  margin: 5px;
+  padding: 8px 12px;
+  transition: 0.3s ease-in-out;
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.menu li a:hover {
+  color: var(--dark);
+}
+
+/* ------------------- */
+/* FOOTER               */
+/* ------------------- */
+
+.footer {
+  color: #000;
+  background-color: #1a8fe3;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1abc9c;
+  color: white;
+}
