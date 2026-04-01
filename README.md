@@ -30,6 +30,7 @@ Este projeto tem como objetivo:
 ## ✨ Funcionalidades
 
 ✔️ Navegação por seções (Home, Serviços, Sócios e Contato)
+
 ✔️ Apresentação visual dos serviços oferecidos
 ✔️ Seção de equipe com links externos
 ✔️ Integração com Google Maps
@@ -74,12 +75,6 @@ Este projeto tem como objetivo:
 
 <img width="1916" height="1048" alt="image" src="https://github.com/user-attachments/assets/8d75e5b0-4e3f-47ae-b988-5224ad8dfe88" />
  
-
----
-
-## 🔗 Links
-
-* 🔗 [LinkedIn - Iolanda](https://www.linkedin.com/in/iolanda-barreto/)
 
 ---
 
