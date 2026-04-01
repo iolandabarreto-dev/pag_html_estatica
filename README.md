@@ -32,9 +32,13 @@ Este projeto tem como objetivo:
 ✔️ Navegação por seções (Home, Serviços, Sócios e Contato)
 
 ✔️ Apresentação visual dos serviços oferecidos
+
 ✔️ Seção de equipe com links externos
+
 ✔️ Integração com Google Maps
+
 ✔️ Formulário de contato
+
 ✔️ Menu responsivo (mobile)
 
 ---
