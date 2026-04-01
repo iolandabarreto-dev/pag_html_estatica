@@ -88,8 +88,8 @@ index.html
 
 ## 📸 Preview do projeto
 
-> 💡 Dica: adicione aqui um print da tela inicial do projeto
-> Exemplo: `img/preview.png`
+<img width="1916" height="1048" alt="image" src="https://github.com/user-attachments/assets/8d75e5b0-4e3f-47ae-b988-5224ad8dfe88" />
+ 
 
 ---
 
@@ -117,11 +117,3 @@ index.html
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins educacionais e de portfólio.
-
----
-
-Se quiser deixar **ainda mais forte pra recrutador**, dá pra adicionar uma seção tipo:
-
-👉 **“O que eu aprendi nesse projeto”** (isso é ouro em seleção)
-
-Se quiser, eu escrevo essa parte pra você também 😉
