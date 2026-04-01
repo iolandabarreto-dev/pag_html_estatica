@@ -61,22 +61,6 @@ Este projeto tem como objetivo:
  ┗ 📄 README.md
 ```
 
----
-
-## ▶️ Como executar
-
-```bash id="7k2mzs"
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-
-# Acesse a pasta
-cd seu-repositorio
-
-# Abra no navegador
-index.html
-```
-
----
 
 ## 👩‍💻 Desenvolvedores
 
